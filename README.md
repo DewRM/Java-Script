@@ -1,2 +1,2 @@
 # Java-Script
-This repository has a my JS homeworks
+This repository has my JS homeworks
