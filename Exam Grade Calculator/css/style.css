@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+body {
+    background-color: #95a5a6;
+    max-width: 80%;
+    margin-left: 10%;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    cursor: default;
+    max-height: 100vh;
+}
+
+.frame {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 4.5% auto;
+    border: 3px solid #7f8c8d;
+    background-color: #ecf0f1;
+    width: 50%;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.25);
+}
+
+.content {
+    width: 80%;
+}
+
+h1 {
+    margin: 10%;
+    color: #4d5556;
+}
+
+label {
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    margin: 5%;
+    line-height: 250%;
+    text-align: center;
+    margin-top: 1%;
+    width: 25%;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+h4 {
+    font-size: larger;
+    margin-top: 5%;
+}
+
+.btn {
+    border: none;
+    font-size: medium;
+    margin: 10% 3%;
+    width: 25%;
+    line-height: 250%;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+
+}
+
+.btn-reset {
+    background-color: rgb(255, 35, 35);
+}
+
+.btn-calculate {
+    background-color: green;
+}
+
+.btn:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+p {
+    color: #95a5a6;
+    font-size: smaller;
+}
+
+a {
+    color: #6d797a;
+    font-size: small;
+}
+
+@media only screen and (max-width: 1440px) {
+    .frame {
+        width: 100%;
+        margin-top: 8%;
+        height: fit-content;
+        font-size: x-large;
+    }
+
+    input {
+        width: 60%;
+    }
+}
+
+/* @media only screen and (max-width: 1024px) {
+    .frame {
+        margin-top: 20%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .frame {
+        margin-top: 30%;
+    }
+} */
+
+@media only screen and (max-width: 425px) {
+    .frame {
+        font-size: large;
+        /* margin-top: 80%; */
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    ::-webkit-input-placeholder {
+        color: transparent;
+    }
+}
